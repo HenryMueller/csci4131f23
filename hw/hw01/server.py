@@ -15,8 +15,19 @@ def server(url):
     ######
     # TODO: Hey student! This is the function you need to change! Don't miss it!
     ######
-
-    return "I didn't do the server part yet. Oh no!"
+    
+    path = url
+    if '?' in url:
+        path = url[:url.index("?")]
+    
+    if (path == "/" or path == "/main"):
+        return open("mainpage.html").read()
+    elif (path == "/contact"):
+        return open("contactform.html").read()
+    elif (path == "/testimonies"):
+        return open("testimonies.html").read()
+    else:
+        return open("404.html").read()
     
 
 # You shouldn't need to change content below this. It would be best if you just left it alone.
