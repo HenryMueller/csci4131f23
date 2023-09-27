@@ -1,0 +1,6 @@
+div {
+    border: 1em;
+    padding: 0.5em;
+    width: (50% - 1em);
+    color: blue;
+}

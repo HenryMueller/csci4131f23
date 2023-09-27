@@ -1,0 +1,68 @@
+<!-- Henry Mueller and -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>boxes!</title>
+    <style>
+      div.card {
+        /* Some freebies to get you started */
+        border-radius: 3em; /* this is how you do corners */
+        box-shadow: 0 0 0.5em;/* a small shadow does amazing work visually*/
+ 
+        /* A few hints */
+
+        /* the elements have no border */
+        border: 0;
+        /* The elements have a total of around 4em space between them*/
+        margin: 4em;
+        /* The boxes are size 25em by 20em*/
+        content: 25em 20em;
+        /* You'll need a width, and height */
+        width: 25%;
+        height: 30%;
+        /* You'll need to set the overflow property to make the borders matter */
+        overflow: hidden;
+        /* The color used is "beige".*/
+        background-color: beige;
+      }
+        /* And you'll need to style more than just the div... */ 
+
+        /* The image should not have a "height" property. */
+      img{
+        width: 20em;
+      }
+        /* The font for the header is " 'Courier New', Courier, monospace ", it is also italic and bold, and only 1.5 times bigger than normal text.*/
+      h1{
+        font-family: 'Courier New', 'Courier', monospace;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-style: italic;
+      }
+        /* The links are bold */
+      a{
+        font-weight: bold;
+      }
+        /*Be careful of your selectors here -- nothing outside of the cards should be effected! */
+      
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="https://campusmaps.umn.edu/sites/campusmaps.umn.edu/files/styles/folwell_full/public/2022-01/kellerhall_150626_4282.jpg?itok=vhRy898F">
+      <h1> Keller Hall </h1>
+      <nav>
+        <a href="https://campusmaps.umn.edu/kenneth-h-keller-hall">More info</a>
+      </nav>
+      <p>This is where a lot of Professors work. Kluver has a secret office in this building!</p>
+    </div>
+    <div class="card">
+      <img src="https://campusmaps.umn.edu/sites/campusmaps.umn.edu/files/styles/folwell_full/public/2022-05/shepherd_laboratories.jpg?itok=025fnI4o">
+      <h1> Shepherd Laboratories</h1>
+      <nav>
+        <a href="https://campusmaps.umn.edu/shepherd-laboratories">More info</a>
+      </nav>
+      <p>This is where a lot of Instructors (used to) work. The top floors are due for a renovation</p>
+    </div>  
+  </body>
+</html>
