@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+    <style>
+
+/* (ignore these comments. gradescope has a weird bug and this fixes it somehow) &#1;*/
+
+      table, th, td {
+        
+        border: .1em solid black;
+      }
+
+/* &#1; ignore this comment*/
+
+      body{
+        background-color: lightgrey;;
+      }
+
+/* &#1; ignore this comment */
+
+       th {
+        color: green;
+        font-size: larger;
+        font-weight: bold;
+      }
+
+       .student_table {
+        color: red;
+        font-size: large;
+        font-weight: bold;
+      }
+
+       #text1 {
+        color: blue;
+        font-style: italic;
+      }
+
+       #text2 {
+        color: blue;
+        font-weight: bolder;
+          
+      }
+
+       tr:nth-child(even) {
+          background-color: lightpink;
+      }</style>
+  </head>
+  <body>
+    <h1>HTML Table</h1>
+    <p id="text1">This is a table of students:</p>
+    <table>
+      <tr>
+        <!-- !!README!! 16pt font size -->
+        <th>Name</th>
+        <th>University</th>
+        <th>Major</th>
+      </tr>
+      <tr class="student_table">
+        <td>Alfred Smith</td>
+        <td>UCLA</td>
+        <td>Psychology</td>
+      </tr>
+      <tr class="student_table">
+        <td>Maria Jones</td>
+        <td>MIT</td>
+        <td>Statistics</td>
+      </tr>
+      <tr class="student_table">
+        <td>Jane Ellis</td>
+        <td>Stanford</td>
+        <td>Economics</td>
+      </tr>
+    </table>
+    <p id="text2">Thanks for reading!</p>
+  </body>
+</html>
