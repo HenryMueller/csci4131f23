@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>calculator</title>
+        <!-- Author(s): Henry Mueller & Andrew Duran-->
+        <script>
+            window.addEventListener("load", () => {
+                const left = document.getElementById("left");
+                const right = document.getElementById("right");
+                const plus = document.getElementById("plus");
+                const out = document.getElementById("out");
+                const add = (x, y) => out.innerText = parseInt(left.value) + parseInt(right.value);
+                plus.addEventListener("click", add);
+            })
+        </script>
+    </head>
+    <body>
+        <input id="left">
+        <button id="plus">+</button>
+        <input id="right">
+        <span id="out"></span>
+    </body>
+</html>
