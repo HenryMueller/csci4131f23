@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <title>Admin: My Contacts</title>
+        <link href="/main.css" rel="stylesheet" id="css">
+        <script src="/js/main.js" async></script>
+        <script src="/js/table.js" async></script>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/">Main Page</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/testimonies">Testimonies</a></li>
+                <li><a href="/admin/contactlog">Contact Log</a></li>
+                <li><button class="dark-mode">Dark Mode</button></li>
+            </ul>
+        </nav>
+
+        <h2>My Contacts and Appointments</h2>
+
+        <div class="div-table">
+            <table class="dynam-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Send Email By</th>
+                    <th>Message Type</th>
+                    <th>SSN Included</th>
+                    <th>Delete Row</th>
+                </tr>
+                <tr id="tRow0">
+                    <td class="name">test</td>
+                    <td class="email"><a href="mailto:testemail@example.com">testemail@example.com</a></td>
+                    <td class="countDown">2012-5-26</td>
+                    <td class="type">Question</td>
+                    <td class="ssn">Yes</td>
+                    <td class="delButton"><button class="delete R0">Delete</button></td>
+                </tr>
+                <tr id="tRow1">
+                    <td class="name">Joe Schmo</td>
+                    <td class="email"><a href="mailto:JoSchmoo@google.com">JoSchmoo@google.com</a></td>
+                    <td class="countDown">2077-4-1</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">No</td>
+                    <td class="delButton"><button class="delete R1">Delete</button></td>
+                </tr>
+                <tr id="tRow2">
+                    <td class="name">Alice Johnson</td>
+                    <td class="email"><a href="mailto:alice.j@example.com">alice.j@example.com</a></td>
+                    <td class="countDown">2021-8-15</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">Yes</td>
+                    <td class="delButton"><button class="delete R2">Delete</button></td>
+                </tr>
+                <tr id="tRow3">
+                    <td class="name">Bob Smith</td>
+                    <td class="email"><a href="mailto:bob.smith@example.com">bob.smith@example.com</a></td>
+                    <td class="countDown">2019-3-10</td>
+                    <td class="type">Question</td>
+                    <td class="ssn">No</td>
+                    <td class="delButton"><button class="delete R3">Delete</button></td>
+                </tr>
+                <tr id="tRow4">
+                    <td class="name">Eva Brown</td>
+                    <td class="email"><a href="mailto:eva.brown@example.com">eva.brown@example.com</a></td>
+                    <td class="countDown">2020-12-5</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">Yes</td>
+                    <td class="delButton"><button class="delete R4">Delete</button></td>
+                </tr>
+                <tr id="tRow5">
+                    <td class="name">Michael Davis</td>
+                    <td class="email"><a href="mailto:michael.d@example.com">michael.d@example.com</a></td>
+                    <td class="countDown">2018-6-20</td>
+                    <td class="type">Question</td>
+                    <td class="ssn">No</td>
+                    <td class="delButton"><button class="delete R5">Delete</button></td>
+                </tr>
+                <tr id="tRow6">
+                    <td class="name">John Doe</td>
+                    <td class="email"><a href="mailto:john.doe@example.com">john.doe@example.com</a></td>
+                    <td class="countDown">2015-11-20</td>
+                    <td class="type">Question</td>
+                    <td class="ssn">Yes</td>
+                    <td class="delButton"><button class="delete R6">Delete</button></td>
+                </tr>
+                <tr id="tRow7">
+                    <td class="name">Jane Smith</td>
+                    <td class="email"><a href="mailto:jane.smith@example.com">jane.smith@example.com</a></td>
+                    <td class="countDown">2019-02-14</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">No</td>
+                    <td class="delButton"><button class="delete R7">Delete</button></td>
+                </tr>
+                <tr id="tRow8">
+                    <td class="name">Chris Johnson</td>
+                    <td class="email"><a href="mailto:chris.j@example.com">chris.j@example.com</a></td>
+                    <td class="countDown">2020-07-30</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">Yes</td>
+                    <td class="delButton"><button class="delete R8">Delete</button></td>
+                </tr>
+                <tr id="tRow9">
+                    <td class="name">Emily White</td>
+                    <td class="email"><a href="mailto:emily.w@example.com">emily.w@example.com</a></td>
+                    <td class="countDown">2017-05-12</td>
+                    <td class="type">Question</td>
+                    <td class="ssn">No</td>
+                    <td class="delButton"><button class="delete R9">Delete</button></td>
+                </tr>
+                <tr id="tRow10">
+                    <td class="name">Daniel Brown</td>
+                    <td class="email"><a href="mailto:daniel.b@example.com">daniel.b@example.com</a></td>
+                    <td class="countDown">2018-09-08</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">Yes</td>
+                    <td class="delButton"><button class="delete R10">Delete</button></td>
+                </tr>
+                <tr id="tRow11">
+                    <td class="name">Sophia Clark</td>
+                    <td class="email"><a href="mailto:sophia.c@example.com">sophia.c@example.com</a></td>
+                    <td class="countDown">2016-03-25</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">No</td>
+                    <td class="delButton"><button class="delete R11">Delete</button></td>
+                </tr>
+                <tr id="tRow12">
+                    <td class="name">Liam Johnson</td>
+                    <td class="email"><a href="mailto:liam.j@example.com">liam.j@example.com</a></td>
+                    <td class="countDown">2023-11-08</td>
+                    <td class="type">Question</td>
+                    <td class="ssn">Yes</td>
+                    <td class="delButton"><button class="delete R12">Delete</button></td>
+                </tr>
+                <tr id="tRow13">
+                    <td class="name">Olivia Wilson</td>
+                    <td class="email"><a href="mailto:olivia.w@example.com">olivia.w@example.com</a></td>
+                    <td class="countDown">2023-11-12</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">No</td>
+                    <td class="delButton"><button class="delete R13">Delete</button></td>
+                </tr>
+                <tr id="tRow14">
+                    <td class="name">Noah Anderson</td>
+                    <td class="email"><a href="mailto:noah.a@example.com">noah.a@example.com</a></td>
+                    <td class="countDown">2023-11-18</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">Yes</td>
+                    <td class="delButton"><button class="delete R14">Delete</button></td>
+                </tr>
+                <tr id="tRow15">
+                    <td class="name">Emma Davis</td>
+                    <td class="email"><a href="mailto:emma.d@example.com">emma.d@example.com</a></td>
+                    <td class="countDown">2023-11-23</td>
+                    <td class="type">Question</td>
+                    <td class="ssn">No</td>
+                    <td class="delButton"><button class="delete R15">Delete</button></td>
+                </tr>
+                <tr id="tRow16">
+                    <td class="name">Liam Smith</td>
+                    <td class="email"><a href="mailto:liam.s@example.com">liam.s@example.com</a></td>
+                    <td class="countDown">2023-11-29</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">Yes</td>
+                    <td class="delButton"><button class="delete R16">Delete</button></td>
+                </tr>
+                <tr id="tRow17">
+                    <td class="name">Ava Johnson</td>
+                    <td class="email"><a href="mailto:ava.j@example.com">ava.j@example.com</a></td>
+                    <td class="countDown">2023-12-02</td>
+                    <td class="type">Question</td>
+                    <td class="ssn">Yes</td>
+                    <td class="delButton"><button class="delete R17">Delete</button></td>
+                </tr>
+                <tr id="tRow18">
+                    <td class="name">Ethan White</td>
+                    <td class="email"><a href="mailto:ethan.w@example.com">ethan.w@example.com</a></td>
+                    <td class="countDown">2023-12-07</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">No</td>
+                    <td class="delButton"><button class="delete R18">Delete</button></td>
+                </tr>
+                <tr id="tRow19">
+                    <td class="name">Sophia Martin</td>
+                    <td class="email"><a href="mailto:sophia.m@example.com">sophia.m@example.com</a></td>
+                    <td class="countDown">2023-12-12</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">Yes</td>
+                    <td class="delButton"><button class="delete R19">Delete</button></td>
+                </tr>
+                <tr id="tRow20">
+                    <td class="name">Mia Brown</td>
+                    <td class="email"><a href="mailto:mia.b@example.com">mia.b@example.com</a></td>
+                    <td class="countDown">2023-12-17</td>
+                    <td class="type">Question</td>
+                    <td class="ssn">No</td>
+                    <td class="delButton"><button class="delete R20">Delete</button></td>
+                </tr>
+                <tr id="tRow21">
+                    <td class="name">James Davis</td>
+                    <td class="email"><a href="mailto:james.d@example.com">james.d@example.com</a></td>
+                    <td class="countDown">2023-12-22</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">Yes</td>
+                    <td class="delButton"><button class="delete R21">Delete</button></td>
+                </tr>
+                <tr id="tRow22">
+                    <td class="name">Isabella Martinez</td>
+                    <td class="email"><a href="mailto:isabella.m@example.com">isabella.m@example.com</a></td>
+                    <td class="countDown">2023-12-28</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">No</td>
+                    <td class="delButton"><button class="delete R22">Delete</button></td>
+                </tr>
+                <tr id="tRow23">
+                    <td class="name">Liam Harris</td>
+                    <td class="email"><a href="mailto:liam.h@example.com">liam.h@example.com</a></td>
+                    <td class="countDown">2023-12-03</td>
+                    <td class="type">Question</td>
+                    <td class="ssn">Yes</td>
+                    <td class="delButton"><button class="delete R23">Delete</button></td>
+                </tr>
+                <tr id="tRow24">
+                    <td class="name">Olivia Robinson</td>
+                    <td class="email"><a href="mailto:olivia.r@example.com">olivia.r@example.com</a></td>
+                    <td class="countDown">2023-12-08</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">No</td>
+                    <td class="delButton"><button class="delete R24">Delete</button></td>
+                </tr>
+                <tr id="tRow25">
+                    <td class="name">Noah Johnson</td>
+                    <td class="email"><a href="mailto:noah.j@example.com">noah.j@example.com</a></td>
+                    <td class="countDown">2023-12-13</td>
+                    <td class="type">Comment</td>
+                    <td class="ssn">Yes</td>
+                    <td class="delButton"><button class="delete R25">Delete</button></td>
+                </tr>
+                <tr id="tRow26">
+                    <td class="name">Emma Wilson</td>
+                    <td class="email"><a href="mailto:emma.w@example.com">emma.w@example.com</a></td>
+                    <td class="countDown">2023-12-18</td>
+                    <td class="type">Question</td>
+                    <td class="ssn">No</td>
+                    <td class="delButton"><button class="delete R26">Delete</button></td>
+                </tr>
+
+            </table>
+        </div>
+
+    </body>
+</html>

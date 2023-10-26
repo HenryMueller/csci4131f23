@@ -1,0 +1,16 @@
+<!--
+    1. Client connects to machine www.armup
+    2. Client sends a request to GET the resource /
+    3. Server reads file warmup/warmup.html
+    4. Client begins parsing HTML
+    5. Client sees a script tag with defer attribute.
+    6. Client sends a request to GET the resource /warmup.js
+    7. Server reads file warmup/warmup.js
+    8. Client finishes parsing HTML
+    9. Client runs Javascript file
+    10. User clicks button
+    11. Javascript modifies the dom
+    12. Server reads the file warmup/heads.png
+    13. Client sends a request to GET the resource /heads.png
+    14. Image shows up on screen.
+-->

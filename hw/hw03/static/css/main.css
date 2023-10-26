@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee Shade');
+
+html {
+    margin: 0;
+}
+
+nav {
+    background-color: darkorchid;
+    color: lightblue;
+    padding: .5em;
+}
+
+nav > ul {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    display: flex;
+    list-style-type: none;
+}
+
+nav > ul > li {
+    padding: 1em;
+    background-color: lightcoral;
+    border-radius: 3em;
+    margin: .5em;
+}
+
+nav > ul > li:hover{
+    background-color: coral;
+}
+
+:is(li):has(> button.dark-mode) {
+    padding: 0;
+    border: 0;
+    margin: .5em;
+}
+
+.dark-mode {
+    font-size: 16px;
+    border: 0;
+    border-radius: 3rem;
+    padding: 1em;
+    margin: 0;
+    background-color: lightcoral;
+    color: lightblue;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dark-mode:hover {
+    background-color: coral;
+}
+
+li > a {
+    color: lightblue;
+    border-radius: 3em;
+    border-width: 1em;
+    border-color: black;
+    
+}
+h1 {
+    font-size: 2.5em;
+    font-family: 'Bungee Shade';
+}
+
+body {
+    background-color: darkslateblue;
+    color: lightpink;
+    margin: 0;
+    text-align: center;
+}
+
+.mainpg-box {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: darkorchid;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+form {
+    background-color: darkorchid;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 1em;
+    border-radius: 2em;
+    overflow: hidden;
+}
+
+input, select {
+    width: 40%;
+}
+
+p.footnote {
+    padding: .5em;
+    color: red;
+    
+}
+
+ol > li {
+    text-align: left;
+}
+
+.div-table {
+    display: block;
+    overflow: auto;
+}
+.dynam-table {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+    padding: 1em;
+    height: 4em;
+    overflow: hidden;
+}
+
+tr:nth-child(even) {
+    background-color: darkorchid;
+    color: lightcoral;
+
+}
+tr:nth-child(odd) {
+    background-color: lightcoral;
+    color: darkorchid
+}
+
+td {
+    text-align: left;
+    padding: .5em;
+}
+
+.delButton {
+    text-align: center;
+}
+
+#ytvid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 15em;
+}
+
+.mainimg {
+    width: 75%;
+}
+
+strong {
+    color:aqua;
+}
+
+em {
+    color: whitesmoke;
+}
+
+.review {
+    border: .5em solid darkorchid;
+    border-radius: 2em;
+    margin: 1em;
+    padding: .5em;
+}
+
+.review-body {
+    text-align: left;
+    font-style: italic;
+}
+
+.reviewer-name {
+    text-align: right;
+    font-weight: bold;
+}
+
+.flex-review {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-left {
+    width: 49%;
+}
+
+.flex-right {
+    width: 49%;
+
+}
