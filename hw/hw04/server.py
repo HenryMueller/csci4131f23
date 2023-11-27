@@ -213,6 +213,7 @@ def extractQueries(newQuery):
     try:
         print(newQuery)
         # newQuery = urllib.parse.unquote(newQuery)
+        global next_id
 
         splitNewQuery = newQuery.split("&")                             # returns a list of the data from the query string
 
@@ -265,7 +266,7 @@ def extractQueries(newQuery):
         print(contacts[newName])
 
         next_id = next_id + 1
-        print("next_id = " + next_id)
+        print("next_id = ", next_id)
         
         return 201
     
