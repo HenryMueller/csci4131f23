@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='UTF-8')
+    title Admin: My Contacts
+    link#css(href='/resources/css/main.css' rel='stylesheet')
+    script(src='/resources/js/main.js' async='')
+    script(src='/resources/js/table.js' async='')
+  include navigation.pug
+  .sale
+    div
+      label(for='sale-input') Set Sale:
+      input#sale-input(type='text' name='sale-input' required='')
+    div
+      button#set-sale Set
+    div
+      button#del-sale Delete
+  h2 My Contacts and Appointments
+  .div-table
+    table.dynam-table
+      tr
+        th Name
+        th Email
+        th Send Email By
+        th Message Type
+        th SSN Included
+        th Delete Row
+    
+      each contact in contacts 
+        - let rowNum = contact["id"];
+        - let email = contact["email"];
+        tr(id = "tRow" + rowNum)
+          td.name #{contact["name"]}
+          td.email 
+            a(href="mailto:" + email) #{contact["email"]}
+          td.countDown #{contact["date"]}
+          td.type #{contact["type"]}
+          td.ssn #{contact["ssn"]}
+          td.delButton 
+            button(class="delete R" + rowNum) Delete

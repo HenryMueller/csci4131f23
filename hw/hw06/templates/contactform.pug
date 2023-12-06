@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='UTF-8')
+    title Contact Us!
+    link#css(href='/resources/css/main.css' rel='stylesheet')
+    script(src='/resources/js/main.js' async='')
+    script(src='/resources/js/contact.js' async='')
+  include navigation.pug
+  h1 Questions? Comments? Concerns?
+  form(action='/contact' method='post')
+    div
+      label(for='name') Name
+      input#name(type='text' name='name' required='')
+    div
+      label(for='email') Email
+      input#email(type='email' name='email' required='')
+    div
+      label(for='date') Need email sent by
+      input#date(type='date' name='date' required='')
+    div
+      label(for='drop') I have a...
+      select#drop(name='drop' required='')
+        option(value='' disabled='' selected='') Select an Option
+        option(value='question') Question
+        option(value='comment')  Comment 
+        option(value='concern')  Concern 
+        option(value='other')    Other   
+    div
+      label(for='option1') SSN included in email?
+      input#option1(type='checkbox' name='option1')
+    #dynam-elem
+    div
+      input(type='submit' name='submit')
