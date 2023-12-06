@@ -6,8 +6,8 @@
 */
 {
     let currCssMode = document.getElementById("css");       // the "link" tag in the html files
-    let lightMode = "http://localhost:4131/main.css";
-    let darkMode = "http://localhost:4131/main.dark.css";
+    let lightMode = "http://localhost:4131/resources/css/main.css";
+    let darkMode = "http://localhost:4131/resources/css/main.dark.css";
     let cssButton = document.getElementsByClassName("dark-mode")[0];
     let storedCssMode = localStorage.getItem("cssMode");    // a locally stored css mode variable
 
