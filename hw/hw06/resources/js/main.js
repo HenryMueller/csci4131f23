@@ -49,7 +49,7 @@
     }
 }
 
-{
+{   // this function updates the sale field every second on the main page
     window.addEventListener("load", () => {
         let newNode = document.getElementById("sale-banner");
         // let bodyElem = document.querySelector("body");
@@ -72,7 +72,7 @@
         }
         // update every second
         if (newNode != null) {
-            setInterval(update, 1000);
+            window.setInterval(update, 1000);
         }
     })
 }

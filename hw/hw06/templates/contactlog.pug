@@ -30,11 +30,11 @@ html(lang="en")
         - let rowNum = contact["id"];
         - let email = contact["email"];
         tr(id = "tRow" + rowNum)
-          td.name #{contact["name"]}
+          td.name #{contact["user"]}
           td.email 
             a(href="mailto:" + email) #{contact["email"]}
-          td.countDown #{contact["date"]}
-          td.type #{contact["type"]}
+          td.countDown #{contact["appointment"]}
+          td.type #{contact["qtype"]}
           td.ssn #{contact["ssn"]}
           td.delButton 
             button(class="delete R" + rowNum) Delete

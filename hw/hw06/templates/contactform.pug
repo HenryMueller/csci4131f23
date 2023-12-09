@@ -10,25 +10,25 @@ html(lang="en")
   h1 Questions? Comments? Concerns?
   form(action='/contact' method='post')
     div
-      label(for='name') Name
-      input#name(type='text' name='name' required='')
+      label(for='user') Name
+      input#name(type='text' name='user' required='')
     div
       label(for='email') Email
       input#email(type='email' name='email' required='')
     div
-      label(for='date') Need email sent by
-      input#date(type='date' name='date' required='')
+      label(for='appointment') Need email sent by
+      input#date(type='date' name='appointment' required='')
     div
-      label(for='drop') I have a...
-      select#drop(name='drop' required='')
+      label(for='qtype') I have a...
+      select#drop(name='qtype' required='')
         option(value='' disabled='' selected='') Select an Option
         option(value='question') Question
         option(value='comment')  Comment 
         option(value='concern')  Concern 
         option(value='other')    Other   
     div
-      label(for='option1') SSN included in email?
-      input#option1(type='checkbox' name='option1')
+      label(for='ssn') SSN included in email?
+      input#option1(type='checkbox' name='ssn')
     #dynam-elem
     div
       input(type='submit' name='submit')
